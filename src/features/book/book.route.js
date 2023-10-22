@@ -86,9 +86,9 @@ app.post('/', upload.single('coverImage'), async (req, res) => {
       // Email content
       const mailOptions = {
         from: 'sudarshanpujari6@gmail.com', // Sender's email address
-        to: 'sudarshanpujari812@gmail.com', // Recipient's email address
-        subject: 'Test Email',
-        text: 'This is a test email sent from Node.js using Nodemailer.'
+        to: verification.email, // Recipient's email address
+        subject: 'Your Book List',
+        text: 'follow this link to to see your book listing. https://famous-daifuku-3ab17c.netlify.app/mybooks'
       };
       
       // Send the email
